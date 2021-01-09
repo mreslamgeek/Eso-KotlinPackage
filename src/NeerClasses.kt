@@ -1,16 +1,20 @@
 class Outer {
 
-    val name: String = "Eslam"
+    val name: String? = "eslam"
 
     inner class Inner {
         fun displayName(): String {
-            return name
+            return name!!
         }
     }
 }
 
 fun main() {
-   // val inner = Outer.Inner()
-   // println(inner.)
+    // val inner = Outer.Inner()
+    // println(inner.)
+
+    val out = Outer()
+    val innn =out.Inner()
+    println(innn.displayName())
 
 }
